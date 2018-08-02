@@ -1,0 +1,25 @@
+show_interval: 5
+refresh_interval: 1
+#socket_path: /var/run/relevantd.socket
+cues:
+  window_title:
+    type: current-title-xorg
+    default: true
+    description: Current window title
+
+  music:
+    type: shell
+    description: Music playing
+    config:
+      command: /home/kyle/bin/music
+
+  wifi:
+    type: wifi
+    description: WiFi connection
+
+  weather:
+    type: current-weather
+    description: Current weather conditions
+    config:
+      metric: f
+      zipcode: 97202
